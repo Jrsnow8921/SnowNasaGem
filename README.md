@@ -1,5 +1,10 @@
 # SnowNasa
 
+## How to obtain a Nasa Api Key
+  https://api.nasa.gov/index.html#apply-for-an-api-key
+  #Apply for an api key, and it will be sent to your email.
+  #Once you recieve your api key you are good to go. 
+
 ## Installation
 
 Add this line to your application's Gemfile:
