@@ -20,14 +20,47 @@ Or install it yourself as:
 
     $ gem install SnowNasa
 
-## Get the Astronomy Picture of the Day
+# Get the Astronomy Picture of the Day
 
-# Class Apod
+## Class Apod
 
 ```ruby
    SnowNasa::Apod.getAstroPic
 ```
 
+# Get the Astronomy Picture of the Day
 
+## Class Apod
 
+```ruby
+   SnowNasa::Apod.getAstroPic
+```
 
+# Get Earth Images 
+
+## Class Earthimg
+
+```ruby
+  SnowNasa::Earthimg.getEarthImages(:lat => "1.5", :lon => "100.75", :date => "2014-02-01", :cloud_code => "True")
+  #cloud_code is optional. 
+```
+
+## Get Mars Rover Pics
+
+Get a list of cameras attached to the rovers 
+
+```ruby
+    SnowNasa::Marsroverphotos.cameras
+```
+
+Get pictures from the rover 
+
+```ruby
+  SnowNasa::Marsroverphotos.getMarsPics(:sol => "1000", :camera => "fhaz", :page => "1", :rover => "curiosity")
+```
+
+## Get Near Earth Objects (Asteroids)
+
+```ruby
+  SnowNasa::Neobjects.getNeo(:start_date => "2016-05-27", :end_date => "2016-05-31")
+```
