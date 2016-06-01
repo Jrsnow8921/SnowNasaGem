@@ -1,0 +1,5 @@
+Description:
+  Creates a config file for the SnowNasa gem with a key to access Nasa's Api
+
+Example:
+  rails g snow_nasa:config

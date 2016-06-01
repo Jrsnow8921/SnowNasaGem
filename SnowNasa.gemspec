@@ -6,7 +6,7 @@ require 'SnowNasa/version'
 Gem::Specification.new do |spec|
   spec.name          = "SnowNasa"
   spec.version       = SnowNasa::VERSION
-  spec.authors       = ["Justin"]
+  spec.authors       = ["Justin Snow"]
   spec.email         = ["jrsnow8921@gmail.com"]
 
   spec.summary       = %q{A gem to interact with Nasa's api}
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   #  raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   #end
 
-  spec.files         = Dir["README.md", "Gemfile", "Rakefile", "spec/*", "lib/**/*"]
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]

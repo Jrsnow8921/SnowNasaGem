@@ -20,25 +20,14 @@ Or install it yourself as:
 
     $ gem install SnowNasa
 
-# Get the Astronomy Picture of the Day
 
-## Class Apod
-
-```ruby
-   SnowNasa::Apod.getAstroPic
-```
-
-# Get the Astronomy Picture of the Day
-
-## Class Apod
+## Get the Astronomy Picture of the Day
 
 ```ruby
    SnowNasa::Apod.getAstroPic
 ```
 
-# Get Earth Images 
-
-## Class Earthimg
+## Get Earth Images 
 
 ```ruby
   SnowNasa::Earthimg.getEarthImages(:lat => "1.5", :lon => "100.75", :date => "2014-02-01", :cloud_code => "True")
