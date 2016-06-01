@@ -1,9 +1,5 @@
 # SnowNasa
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/SnowNasa`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,6 +16,11 @@ Or install it yourself as:
 
     $ gem install SnowNasa
 
+## Install the initializer 
+```ruby
+  rails g snow_nasa:config
+  #this is optional and it makes it easy to set the nasa_api_key only once, otherwise you will need to set the nasa_api_key global each time you make a request.  
+```
 
 ## Get the Astronomy Picture of the Day
 
