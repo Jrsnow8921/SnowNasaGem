@@ -1,5 +1,13 @@
 # SnowNasa
 
+SnowNasa is a ruby gem to interface with Nasa's Api
+
+##Gem Status 
+  <a href="https://badge.fury.io/rb/SnowNasa"><img src="https://badge.fury.io/rb/SnowNasa.svg" alt="Gem Version" height="18"></a>
+
+## Travis CI Build Status
+<a href="https://travis-ci.org/Jrsnow8921"><img src="https://travis-ci.org/Jrsnow8921/SnowNasaGem.svg?branch=master" height="18"></a>
+
 ## How to obtain a Nasa Api Key
   https://api.nasa.gov/index.html#apply-for-an-api-key
   #Apply for an api key, and it will be sent to your email.

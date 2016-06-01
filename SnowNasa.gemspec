@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["jrsnow8921@gmail.com"]
 
   spec.summary       = %q{A gem to interact with Nasa's api}
-  spec.description   = %q{G}
-  spec.homepage      = ""
+  spec.description   = %q{A gem to interact with Nasa's api to retrieve the following-- "The Astronomy Picture of the Day", "Earth Images", "Mars Rover Pics ^_^", and "Near Earth Objects(Asteroids) }
+  spec.homepage      = "https://github.com/Jrsnow8921/SnowNasaGem"
   spec.license       = "MIT"
 
   #if spec.respond_to?(:metadata)
