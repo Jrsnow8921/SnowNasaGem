@@ -36,6 +36,8 @@ module SnowNasa
       else
         base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&camera=#{camera}&api_key=#{@@nasa_api_key}"
       end
+      data = open(base_url).read 
+      JSON.parse(data)
     end
   end
 end
