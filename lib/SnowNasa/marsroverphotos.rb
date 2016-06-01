@@ -32,9 +32,9 @@ module SnowNasa
       page = options[:page].to_i
       rover = options[:rover]
       if camera.nil?
-        base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&api_key=#{nasa_api_key}"
+        base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&api_key=#{@@nasa_api_key}"
       else
-        base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&camera=#{camera}&api_key=#{nasa_api_key}"
+        base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&camera=#{camera}&api_key=#{@@nasa_api_key}"
       end
     end
   end
