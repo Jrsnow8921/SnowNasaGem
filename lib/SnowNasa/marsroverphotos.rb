@@ -1,5 +1,5 @@
 module SnowNasa
-  class MarsRoverPhotos
+  class Marsroverphotos
     include SnowNasa
 
     def self.cameras
@@ -11,19 +11,19 @@ module SnowNasa
       mardi = "(MARDI)= Mars Descent Imager- This is onboard Curiousity only\n".yellow
       navcam = "(NAVCAM)= Navigation Camera- This is onboard Curiousity, Opportunity, and Spirit\n".red
       pancam = "(PANCAM)= Panoramic Camera- This is onboard Opportunity, and Spirit\n".green
-      minites = "(MINITES)= Minature Thermal Emission Spectrometer(Mini-TES)- This in onbard Opportunity, and Spirit\n".yellow      
+      minites = "(MINITES)= Minature Thermal Emission Spectrometer(Mini-TES)- This in onbard Opportunity, and Spirit\n".yellow
       cams =(
          fhaz +
          rhaz +
-         mast + 
+         mast +
          chemcam +
          mahli +
          mardi +
-         navcam + 
-         pancam + 
+         navcam +
+         pancam +
          minites)
       list_cams = cams.split(/\n+/).each { |x| puts x }
-      return nil      
+      return nil
     end
 
     def self.getMarsPics(options = {})
@@ -33,9 +33,11 @@ module SnowNasa
       rover = options[:rover]
       if camera.nil?
         base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&api_key=#{nasa_api_key}
-      else 
+      else
         base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/#{rover}/photos?sol=#{sol}&camera=#{camera}&api_key=#{nasa_api_key}
-      end 
+      end
     end
-  end 
+  end
 end
+
+

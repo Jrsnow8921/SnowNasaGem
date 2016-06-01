@@ -1,5 +1,5 @@
 module SnowNasa
-  class EarthImagery
+  class Earthimg    
     include SnowNasa
 
     def self.getEarthImages(options = {})
@@ -16,5 +16,5 @@ module SnowNasa
       data = open(base_url).read
       JSON.parse(data)
     end
-  end 
-end 
+  end
+end

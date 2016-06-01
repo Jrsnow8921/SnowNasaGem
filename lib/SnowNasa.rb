@@ -1,8 +1,8 @@
 require 'SnowNasa/version'
-#require 'SnowNasa/AstroPicOfDay'
-require 'SnowNasa/NearEarthObjects'
-require 'SnowNasa/EarthImagery'
-require 'SnowNasa/MarsRoverPhotos'
+require 'SnowNasa/apod'
+require 'SnowNasa/neobjects'
+require 'SnowNasa/earthimg'
+require 'SnowNasa/marsroverphotos'
 
 
 
