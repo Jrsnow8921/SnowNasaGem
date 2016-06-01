@@ -1,8 +1,8 @@
-require "SnowNasa/version"
-require_relative "SnowNasa/AstroPicOfDay"
-require_relative "SnowNasa/NearEarthObjects"
-require_relative "SnowNasa/EarthImagery"
-require_relative "SnowNasa/MarsRoverPhotos"
+require 'SnowNasa/version'
+#require 'SnowNasa/AstroPicOfDay'
+require 'SnowNasa/NearEarthObjects'
+require 'SnowNasa/EarthImagery'
+require 'SnowNasa/MarsRoverPhotos'
 
 
 
